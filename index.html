@@ -1,49 +1,199 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Saba Rahimi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      max-width: 720px;
-      margin: 60px auto;
-      padding: 0 20px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 { margin-bottom: 5px; }
-    h2 {
-      font-size: 14px;
-      text-transform: lowercase;
-      letter-spacing: 0.08em;
-      color: #666;
-      margin-top: 40px;
-    }
-    a { color: #0b57d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Rahimi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 0.3em;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            font-size: 1.05em;
+            color: #444;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #0066cc;
+        }
+
+        .intro {
+            margin-bottom: 2em;
+        }
+
+        .links {
+            margin: 2em 0;
+            font-size: 1.05em;
+        }
+
+        .links a {
+            margin-right: 1.5em;
+            display: inline-block;
+            margin-bottom: 0.5em;
+        }
+
+        .project-list {
+            list-style: none;
+        }
+
+        .project-list li {
+            margin-bottom: 1.5em;
+            padding-left: 0;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #000;
+            margin-bottom: 0.3em;
+        }
+
+        .project-description {
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 0.3em;
+        }
+
+        .project-links {
+            font-size: 0.9em;
+        }
+
+        .project-links a {
+            margin-right: 1em;
+        }
+
+        footer {
+            margin-top: 4em;
+            padding-top: 2em;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 16px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Saba Rahimi</h1>
+    </header>
 
-<h1>Saba Rahimi</h1>
-<p>AI · Systems · Tinkerer</p>
+    <section class="intro">
+        <p>
+            I'm a [your role/description]. I'm interested in [your interests].
+        </p>
+        <p>
+            Currently, I'm [what you're doing now]. Previously, I [your background].
+        </p>
+    </section>
 
-<h2>bio</h2>
-<p>
-I’m interested in AI systems, infrastructure, and building weird useful tools.
-</p>
+    <div class="links">
+        <a href="https://github.com/sabarahimi2019" target="_blank">GitHub</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+    </div>
 
-<h2>projects</h2>
-<ul>
-  <li>Coming soon.</li>
-</ul>
+    <section>
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li>
+                <div class="project-title">Project Name</div>
+                <div class="project-description">
+                    A brief description of what this project does and why it's interesting.
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Demo</a>
+                </div>
+            </li>
+            <li>
+                <div class="project-title">Another Project</div>
+                <div class="project-description">
+                    Description of another cool project you've worked on.
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Paper</a>
+                </div>
+            </li>
+            <li>
+                <div class="project-title">Third Project</div>
+                <div class="project-description">
+                    Yet another interesting project with a brief explanation.
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-<h2>contact</h2>
-<p>
-<a href="mailto:your@email.com">email</a>
-</p>
+    <section>
+        <h2>Writing</h2>
+        <ul class="project-list">
+            <li>
+                <div class="project-title">Blog Post Title</div>
+                <div class="project-description">
+                    A brief description or excerpt from the blog post.
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Read more</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
+    <footer>
+        <p>&copy; 2026 Saba Rahimi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
